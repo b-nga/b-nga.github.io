@@ -1,12 +1,14 @@
 /* css/style.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-body: 'EB Garamond';
   --clr-bg: #f9f9fb;
   --clr-text: #222;
-  --clr-accent: #0069ed;
+  --clr-accent: #2d2d2d;
+  --clr-special: #e18f00;
 }
+
 
 * { box-sizing: border-box; }
 body {
@@ -20,11 +22,16 @@ body {
 html.dark {
   --clr-bg: #141414;
   --clr-text: #f2f2f2;
-  --clr-accent: #79b8ff;
+  --clr-accent: var(--clr-accent);
 }
 
 
 header, footer { padding: 1.5rem 1rem; text-align: center; }
-h1 a, nav a { text-decoration: none; color: var(--clr-accent); }
-article { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+nav a { text-decoration: none; color: var(--clr-text); }
+h1 a { text-decoration: none; color: var(--clr-accent); }
+h2 a { color: var(--clr-special); margin: 0;}
+
+article { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; outline:auto; }
+article h2 { margin-bottom: 0.5rem; }
+article p { margin: 0.25rem 0; }
 .meta { font-size: 0.875rem; color: #666; }
