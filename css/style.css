@@ -7,6 +7,7 @@
   --clr-text: #222;
   --clr-accent: #2d2d2d;
   --clr-special: #e18f00;
+  --clr-border: #0000000a;
 }
 
 
@@ -23,6 +24,7 @@ html.dark {
   --clr-bg: #141414;
   --clr-text: #f2f2f2;
   --clr-accent: var(--clr-accent);
+  --clr-border: #ffffff0a;
 }
 
 
@@ -31,7 +33,7 @@ nav a { text-decoration: none; color: var(--clr-text); }
 h1 a { text-decoration: none; color: var(--clr-accent); }
 h2 a { color: var(--clr-special); margin: 0;}
 
-article { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; outline:auto; }
+article { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
 article h2 { margin-bottom: 0.5rem; }
 article p { margin: 0.25rem 0; }
 .meta { font-size: 0.875rem; color: #666; }
