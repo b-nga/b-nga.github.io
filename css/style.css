@@ -1,0 +1,30 @@
+/* css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --font-body: 'Inter', system-ui, sans-serif;
+  --clr-bg: #f9f9fb;
+  --clr-text: #222;
+  --clr-accent: #0069ed;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--clr-text);
+  background: var(--clr-bg);
+}
+
+html.dark {
+  --clr-bg: #141414;
+  --clr-text: #f2f2f2;
+  --clr-accent: #79b8ff;
+}
+
+
+header, footer { padding: 1.5rem 1rem; text-align: center; }
+h1 a, nav a { text-decoration: none; color: var(--clr-accent); }
+article { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+.meta { font-size: 0.875rem; color: #666; }
