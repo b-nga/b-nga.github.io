@@ -56,7 +56,6 @@ article {
   max-width: fit-content;
   border: 1px solid var(--clr-border);
   padding: 1.5rem;
-  border-radius: 8px;
   background: var(--clr-bg);
 }
 
