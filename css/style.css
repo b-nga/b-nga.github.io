@@ -18,6 +18,9 @@ body {
   line-height: 1.6;
   color: var(--clr-text);
   background: var(--clr-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 html.dark {
@@ -28,12 +31,71 @@ html.dark {
 }
 
 
-header, footer { padding: 1.5rem 1rem; text-align: center; }
+header { padding: 1.5rem 1rem; text-align: center; }
+footer { 
+  padding: 1.5rem 1rem; 
+  text-align: center; 
+  margin-top: auto; 
+}
 nav a { text-decoration: none; color: var(--clr-text); }
 h1 a { text-decoration: none; color: var(--clr-accent); }
-h2 a { color: var(--clr-special); margin: 0;}
 
-article { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
-article h2 { margin-bottom: 0.5rem; }
-article p { margin: 0.25rem 0; }
+
+.articles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+article { 
+  max-width: fit-content;
+  border: 1px solid var(--clr-border);
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--clr-bg);
+}
+
+article h2 a { margin-bottom: .5rem; max-width: fit-content; color: var(--clr-special); }
+article h2 {margin-top: 0;}
+article p { margin: 0.25rem 0; max-width: fit-content;  }
 .meta { font-size: 0.875rem; color: #666; }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .articles-grid {
+    max-width: 95%;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  article {
+    padding: 1rem;
+  }
+  
+  header {
+    padding: 1rem 0.5rem;
+  }
+  
+  footer {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .articles-grid {
+    max-width: 90%;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .articles-grid {
+    max-width: 80%;
+  }
+}

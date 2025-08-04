@@ -1,5 +1,10 @@
 /* js/main.js */
 
+// Create toggle button first
+const toggle = document.createElement('button');
+toggle.style = 'position:fixed; top:1rem; right:1rem; background:transparent; border:none; font-size:1.5rem; cursor:pointer; opacity:0.7;';
+document.body.appendChild(toggle);
+
 // Check for saved theme preference or default to device preference
 const getTheme = () => {
   const savedTheme = localStorage.getItem('theme');
@@ -27,11 +32,6 @@ const applyTheme = (theme) => {
 // Initialize theme
 const theme = getTheme();
 applyTheme(theme);
-
-// Create toggle button
-const toggle = document.createElement('button');
-toggle.style = 'position:fixed; top:1rem; right:1rem; background:transparent; border:none; font-size:1.5rem; cursor:pointer; opacity:0.7;';
-document.body.appendChild(toggle);
 
 // Toggle theme on click
 toggle.addEventListener('click', () => {
