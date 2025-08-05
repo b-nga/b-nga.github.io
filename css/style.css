@@ -98,6 +98,12 @@ article p { margin: 0.25rem 0; max-width: fit-content;  }
 
 /* Mobile styles */
 @media (max-width: 768px) {
+  main p {
+    max-width: 80%;
+    font-size: 1.2rem;
+    margin: 0.75rem auto;
+  }
+  
   .articles-grid {
     max-width: 95%;
     gap: 1rem;
