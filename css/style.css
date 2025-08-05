@@ -23,6 +23,15 @@ body {
   flex-direction: column;
 }
 
+main {
+  max-width: 45%;
+  margin: 0 auto;
+}
+
+main p {
+  font-size: 1.5rem;
+}
+
 html.dark {
   --clr-bg: #141414;
   --clr-text: #f2f2f2;
@@ -57,12 +66,36 @@ article {
   border: 1px solid var(--clr-border);
   padding: 1.5rem;
   background: var(--clr-bg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
-article h2 a { margin-bottom: .5rem; max-width: fit-content; color: var(--clr-special); }
+article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--clr-border);
+}
+
+.article-button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+.article-button h2 {
+  color: var(--clr-special);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+article h2 { margin-bottom: .5rem; max-width: fit-content; color: var(--clr-special); }
 article h2 {margin-top: 0;}
 article p { margin: 0.25rem 0; max-width: fit-content;  }
-.meta { font-size: 0.875rem; color: #666; }
+.meta { font-size: 0.875rem; color: #666; text-align: center; }
 
 /* Mobile styles */
 @media (max-width: 768px) {
