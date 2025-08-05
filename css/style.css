@@ -15,7 +15,7 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--clr-text);
   background: var(--clr-bg);
   min-height: 100vh;
@@ -23,13 +23,12 @@ body {
   flex-direction: column;
 }
 
-main {
-  max-width: 45%;
-  margin: 0 auto;
-}
+
 
 main p {
   font-size: 1.5rem;
+  max-width: 45%;
+  margin: 1rem auto;
 }
 
 html.dark {
