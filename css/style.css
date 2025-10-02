@@ -5,6 +5,7 @@
 
 :root {
   --font-body: 'JetBrains Mono';
+  --font-p: 'EB Garamond';
   --clr-bg: #f9f9fb;
   --clr-text: #222;
   --clr-accent: #2d2d2d;
@@ -29,6 +30,7 @@ body {
 
 main p {
   font-size: 1.5rem;
+  font-family: var(--font-p);
   max-width: 45%;
   margin: 1rem auto;
 }
