@@ -9,7 +9,7 @@
   --clr-bg: #f9f9fb;
   --clr-text: #222;
   --clr-accent: #2d2d2d;
-  --clr-special: #e18f00;
+  --clr-special: #e10069;
   --clr-border: #0000000a;
 }
 
@@ -22,11 +22,15 @@ body {
   color: var(--clr-text);
   background: var(--clr-bg);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 
+
+main {
+  min-height: 0;
+}
 
 main p {
   font-size: 1.5rem;
@@ -42,12 +46,12 @@ html.dark {
   --clr-border: #ffffff0a;
 }
 
-
 header { padding: 1.5rem 1rem; text-align: center; }
+
 footer { 
+  opacity: 0.05;
   padding: 1.5rem 1rem; 
   text-align: center; 
-  margin-top: 100vh - auto;
   padding-bottom: 0;
   font-size: 5vw;
   font-weight: 900;
