@@ -1,8 +1,10 @@
 /* css/style.css */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 
 :root {
-  --font-body: 'EB Garamond';
+  --font-body: 'JetBrains Mono';
   --clr-bg: #f9f9fb;
   --clr-text: #222;
   --clr-accent: #2d2d2d;
@@ -43,7 +45,12 @@ header { padding: 1.5rem 1rem; text-align: center; }
 footer { 
   padding: 1.5rem 1rem; 
   text-align: center; 
-  margin-top: auto; 
+  margin-top: 100vh - auto;
+  padding-bottom: 0;
+  font-size: 5vw;
+  font-weight: 900;
+  color: var(--clr-bg);
+  background-color: var(--clr-special);
 }
 nav a { text-decoration: none; color: var(--clr-text); }
 h1 a { text-decoration: none; color: var(--clr-accent); }
